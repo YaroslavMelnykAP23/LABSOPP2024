@@ -42,5 +42,23 @@ int main() {
     cout << "\nКвитанція 2:" << endl;
     kvitancya2.display();
 
+    // Ввід даних з клавіатури
+    int num;
+    string date;
+    double amount;
+
+    cout << "\nВведіть дані для квитанції 3:" << endl;
+    cout << "Номер: ";
+    cin >> num;
+    cout << "Дата (YYYY-MM-DD): ";
+    cin >> date;
+    cout << "Сума до сплати: ";
+    cin >> amount;
+
+    kvitancya kvitancya3(num, date, amount);
+
+    cout << "\nКвитанція 3:" << endl;
+    kvitancya3.display();
+
     return 0;
 }
