@@ -85,8 +85,25 @@ int main() {
     cout << "\nДеталі квитанції 3:" << endl;
     receipt3.display();
 
+    // об'єкт з клавіатри
+    Receipt receipt4;
+    cout << "\nВведіть номер квитанції: ";
+    int num;
+    cin >> num;
+    cout << "Введіть дату (у форматі YYYY-MM-DD): ";
+    string date;
+    cin >> date;
+    cout << "Введіть суму до сплати: ";
+    double amount;
+    cin >> amount;
+    receipt4.setValues(num, date, amount);
+
+    // Виведення даних об'єкта
+    cout << "\nДеталі квитанції 4:" << endl;
+    receipt4.display();
+
     // Зберігання екземплярів у векторі
-    vector<Receipt> receipts = {receipt1, receipt2, receipt3};
+    vector<Receipt> receipts = {receipt1, receipt2, receipt3, receipt4};
 
     // Виведення квитанцій, де сума більше певного значення
     cout << "\nКвитанції з сумою більше 200:\n";
