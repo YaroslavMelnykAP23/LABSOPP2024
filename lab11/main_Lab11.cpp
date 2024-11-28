@@ -1,5 +1,5 @@
-#include "Fish_Lab11.h"    // Заголовок для класу Fish
-#include "Mammals_Lab11.h" // Заголовок для класу Mammal
+#include "Fish_Lab11.h"    
+#include "Mammals_Lab11.h" 
 #include <vector>
 #include <iostream>
 
