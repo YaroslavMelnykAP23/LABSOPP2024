@@ -34,13 +34,12 @@ void Fish::inputData() {
     // Введення імені
     std::string inputName;
     while (true) {
-        std::cout << "Введіть ім'я риби (Shark): ";
+        std::cout << "Введіть ім'я риби: ";
         std::getline(std::cin, inputName);
-        if (inputName == "Shark") {
-            setName(inputName);
+        if (!inputName.empty()){
             break;
         } else {
-            std::cout << "Ім'я має бути 'Shark'. Спробуйте ще раз.\n";
+            std::cout << "Ім'я не може бути порожнім. Спробуйте ще раз.\n";
         }
     }
 
