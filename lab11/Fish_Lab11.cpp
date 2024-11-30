@@ -38,25 +38,25 @@ void Fish::display() const {
 }
 
 void Fish::inputData() {
-    // Введення для імені риби
+    // Введення імені риби
     while (true) {
-        std::cout << "Введіть ім'я риби (Shark): ";
+        std::cout << "Введіть ім'я риби: ";
         std::getline(std::cin, name);
-        if (name == "Shark") {
+        if (!name.empty()) { // Перевірка на порожній рядок
             break;
         } else {
-            std::cout << "Ім'я повинно бути 'Shark'. Спробуйте ще раз.\n";
+            std::cout << "Ім'я не може бути порожнім. Спробуйте ще раз.\n";
         }
     }
 
     // Введення для середовища
     while (true) {
-        std::cout << "Введіть середовище проживання (Sea): ";
+        std::cout << "Введіть середовище проживання: ";
         std::getline(std::cin, habitat);
-        if (habitat == "Sea") {
+        if (!habitat.empty()) { // Перевірка на порожній рядок
             break;
         } else {
-            std::cout << "Середовище повинно бути 'Sea'. Спробуйте ще раз.\n";
+            std::cout << "Середовище не може бути порожнім. Спробуйте ще раз.\n";
         }
     }
 
